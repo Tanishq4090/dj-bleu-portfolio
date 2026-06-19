@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DJ BLEU — Groove Driven DJ / Producer</title>
+  <meta name="description" content="DJ BLEU is a groove-driven artist blending Tech-House, Jersey Club, Amapiano, and Afro House into warm, percussive sets built to move the dancefloor." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600;700;900&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav id="main-nav">
+    <ul class="nav-links">
+      <li><a href="#" class="nav-link active" data-section="home" id="nav-home">HOME</a></li>
+      <li><a href="#" class="nav-link" data-section="events" id="nav-events">EVENTS</a></li>
+      <li><a href="#" class="nav-link" data-section="radio" id="nav-radio">BLEU'S RADIO</a></li>
+      <li><a href="#" class="nav-link" data-section="about" id="nav-about">ABOUT</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#" class="mobile-link" data-section="home">HOME</a></li>
+      <li><a href="#" class="mobile-link" data-section="events">EVENTS</a></li>
+      <li><a href="#" class="mobile-link" data-section="radio">BLEU'S RADIO</a></li>
+      <li><a href="#" class="mobile-link" data-section="about">ABOUT</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  HOME SECTION                       -->
+  <!-- ═══════════════════════════════════ -->
+  <section id="section-home" class="section active">
+    <style>
+      @media (max-width: 768px) {
+        #hero-bg {
+          background-image: url('mobile/ChatGPT%20Image%20Jun%204,%202026,%2012_41_02%20PM.png') !important;
+          background-position: center top !important;
+        }
+      }
+    </style>
+    <!-- Full-screen hero — image only, nothing on top -->
+    <div class="hero">
+      <div class="hero-bg" id="hero-bg"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  EVENTS SECTION                     -->
+  <!-- ═══════════════════════════════════ -->
+  <section id="section-events" class="section">
+
+    <div class="page-header">
+      <h2 class="page-title">EVENTS</h2>
+      <p class="page-subtitle">A look back at past performances</p>
+    </div>
+
+    <div class="events-showcase">
+
+      <!-- ── EVENT 1 ── -->
+      <div class="event-showcase-card" id="event-showcase-1">
+        <div class="event-showcase-info">
+          <div class="event-showcase-tag">TECH-HOUSE, AFRO</div>
+          <h3 class="event-showcase-name">CatchTheFreakWave</h3>
+          <div class="event-showcase-meta">Opened for the exclusive Freakwave IP, playing alongside the renowned Dev Raiyani. &bull; Oct 2025</div>
+        </div>
+        <div class="carousel" id="carousel-1">
+          <div class="carousel-track" id="track-1">
+            <div class="carousel-slide">
+              <img src="DevRaiyani/IMG_6957.JPG" alt="DevRaiyani event photo">
+            </div>
+            <div class="carousel-slide">
+              <video src="DevRaiyani/35398E4C-03CC-4F38-BE04-6D651DCA2723.mov" autoplay muted loop playsinline controls></video>
+            </div>
+            <div class="carousel-slide">
+              <video src="DevRaiyani/7408A46A-6BD3-43D4-9377-E8E94F59DCD3.mov" autoplay muted loop playsinline controls></video>
+            </div>
+            <div class="carousel-slide">
+              <video src="DevRaiyani/IMG_3916.mov" autoplay muted loop playsinline controls></video>
+            </div>
+            <div class="carousel-slide">
+              <video src="DevRaiyani/IMG_6936.mov" autoplay muted loop playsinline controls></video>
+            </div>
+          </div>
+          <button class="carousel-btn carousel-prev" data-carousel="1" aria-label="Previous">&#8592;</button>
+          <button class="carousel-btn carousel-next" data-carousel="1" aria-label="Next">&#8594;</button>
+          <div class="carousel-dots" id="dots-1">
+            <span class="dot active" data-carousel="1" data-index="0"></span>
+            <span class="dot" data-carousel="1" data-index="1"></span>
+            <span class="dot" data-carousel="1" data-index="2"></span>
+            <span class="dot" data-carousel="1" data-index="3"></span>
+            <span class="dot" data-carousel="1" data-index="4"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── EVENT 2 ── -->
+      <div class="event-showcase-card" id="event-showcase-2">
+        <div class="event-showcase-info">
+          <div class="event-showcase-tag">POP-UP &bull; DJ SET</div>
+          <h3 class="event-showcase-name">Bluorng</h3>
+          <div class="event-showcase-meta">Set the vibe as the DJ for Bluorng's first-ever pop-up in Surat, hosted at the 1331 Cafe.</div>
+        </div>
+        <div class="carousel" id="carousel-2">
+          <div class="carousel-track" id="track-2">
+            <div class="carousel-slide" style="background-color: #000;">
+              <img src="Bluorng/IMG_9241.jpeg" alt="Bluorng event photo" style="object-fit: contain; width: 100%; height: 100%;">
+            </div>
+          </div>
+          <button class="carousel-btn carousel-prev" data-carousel="2" aria-label="Previous" style="display:none;">&#8592;</button>
+          <button class="carousel-btn carousel-next" data-carousel="2" aria-label="Next" style="display:none;">&#8594;</button>
+          <div class="carousel-dots" id="dots-2">
+            <span class="dot active" data-carousel="2" data-index="0"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── EVENT 3 ── -->
+      <div class="event-showcase-card" id="event-showcase-3">
+        <div class="event-showcase-info">
+          <div class="event-showcase-tag">TECHNO</div>
+          <h3 class="event-showcase-name">Auro Fresher's Party</h3>
+          <div class="event-showcase-meta">Hosted and played an unforgettable set at Auro University's fresher's party for the incoming 2025 batch.</div>
+        </div>
+        <div class="carousel" id="carousel-3">
+          <div class="carousel-track" id="track-3">
+            <div class="carousel-slide">
+              <video src="freshers/ScreenRecording_09-06-2025 22-08-00_1.mov" autoplay muted loop playsinline controls></video>
+            </div>
+            <div class="carousel-slide">
+              <video src="freshers/DSCF3360.mov" autoplay muted loop playsinline controls></video>
+            </div>
+            <div class="carousel-slide">
+              <video src="freshers/IMG_0413.mov" autoplay muted loop playsinline controls></video>
+            </div>
+          </div>
+          <button class="carousel-btn carousel-prev" data-carousel="3" aria-label="Previous">&#8592;</button>
+          <button class="carousel-btn carousel-next" data-carousel="3" aria-label="Next">&#8594;</button>
+          <div class="carousel-dots" id="dots-3">
+            <span class="dot active" data-carousel="3" data-index="0"></span>
+            <span class="dot" data-carousel="3" data-index="1"></span>
+            <span class="dot" data-carousel="3" data-index="2"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── EVENT 4 ── -->
+      <div class="event-showcase-card" id="event-showcase-4">
+        <div class="event-showcase-info">
+          <div class="event-showcase-tag">HOUSE &bull; TECH-HOUSE</div>
+          <h3 class="event-showcase-name">The Night Shift</h3>
+          <div class="event-showcase-meta">Played for 'The Night Shift' IP at Varso House's office, completely transforming their workspace into an underground party house.</div>
+        </div>
+        <div class="carousel" id="carousel-4">
+          <div class="carousel-track" id="track-4">
+            <div class="carousel-slide">
+              <video src="The night shift/IMG_8638.MOV" autoplay muted loop playsinline controls></video>
+            </div>
+            <div class="carousel-slide">
+              <video src="The night shift/15385cd2-aca9-4bea-be68-2bcb6c726562.MP4" autoplay muted loop playsinline controls></video>
+            </div>
+            <div class="carousel-slide">
+              <video src="The night shift/437dad42-e79d-4f4f-b758-88a257dcff37.MP4" autoplay muted loop playsinline controls></video>
+            </div>
+            <div class="carousel-slide">
+              <video src="The night shift/48e78aa2-1ed9-47f0-9c5b-c12955f6e79f.MP4" autoplay muted loop playsinline controls></video>
+            </div>
+            <div class="carousel-slide">
+              <video src="The night shift/78467275-214b-47cd-9b94-ef9d83987f4c.MP4" autoplay muted loop playsinline controls></video>
+            </div>
+            <div class="carousel-slide">
+              <video src="The night shift/7dc5f653-ee11-404e-97b8-b24b0cdf907b.MP4" autoplay muted loop playsinline controls></video>
+            </div>
+          </div>
+          <button class="carousel-btn carousel-prev" data-carousel="4" aria-label="Previous">&#8592;</button>
+          <button class="carousel-btn carousel-next" data-carousel="4" aria-label="Next">&#8594;</button>
+          <div class="carousel-dots" id="dots-4">
+            <span class="dot active" data-carousel="4" data-index="0"></span>
+            <span class="dot" data-carousel="4" data-index="1"></span>
+            <span class="dot" data-carousel="4" data-index="2"></span>
+            <span class="dot" data-carousel="4" data-index="3"></span>
+            <span class="dot" data-carousel="4" data-index="4"></span>
+            <span class="dot" data-carousel="4" data-index="5"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── EVENT 5 ── -->
+      <div class="event-showcase-card" id="event-showcase-5">
+        <div class="event-showcase-info">
+          <div class="event-showcase-tag">HARD-TECHNO</div>
+          <h3 class="event-showcase-name">Xcursion</h3>
+          <div class="event-showcase-meta">Hosted the debut event for my own IP 'Xcursion' in an abandoned warehouse. Brought the cage concept to Surat for the first time, featuring a fire artist and earning a feature in the local newspaper.</div>
+        </div>
+        <div class="carousel" id="carousel-5">
+          <div class="carousel-track" id="track-5">
+            <div class="carousel-slide">
+              <img src="Xcursion/IMG_8457.JPG" alt="Xcursion event photo">
+            </div>
+            <div class="carousel-slide">
+              <img src="Xcursion/IMG_7257.JPG" alt="Xcursion event photo">
+            </div>
+            <div class="carousel-slide">
+              <img src="Xcursion/IMG_7259.JPG" alt="Xcursion event photo">
+            </div>
+            <div class="carousel-slide">
+              <video src="Xcursion/IMG_7263.MOV" autoplay muted loop playsinline controls></video>
+            </div>
+            <div class="carousel-slide">
+              <img src="Xcursion/IMG_8413.JPG" alt="Xcursion event photo">
+            </div>
+            <div class="carousel-slide">
+              <img src="Xcursion/IMG_8453.JPG" alt="Xcursion event photo">
+            </div>
+            <div class="carousel-slide">
+              <img src="Xcursion/IMG_8458.JPG" alt="Xcursion event photo">
+            </div>
+          </div>
+          <button class="carousel-btn carousel-prev" data-carousel="5" aria-label="Previous">&#8592;</button>
+          <button class="carousel-btn carousel-next" data-carousel="5" aria-label="Next">&#8594;</button>
+          <div class="carousel-dots" id="dots-5">
+            <span class="dot active" data-carousel="5" data-index="0"></span>
+            <span class="dot" data-carousel="5" data-index="1"></span>
+            <span class="dot" data-carousel="5" data-index="2"></span>
+            <span class="dot" data-carousel="5" data-index="3"></span>
+            <span class="dot" data-carousel="5" data-index="4"></span>
+            <span class="dot" data-carousel="5" data-index="5"></span>
+            <span class="dot" data-carousel="5" data-index="6"></span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /events-showcase -->
+
+    <div class="booking-cta">
+      <p>Looking to book BLEU for your event?</p>
+      <a href="mailto:book@djbleu.com" class="btn-primary">BOOK NOW</a>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  RADIO SECTION                      -->
+  <!-- ═══════════════════════════════════ -->
+  <section id="section-radio" class="section">
+
+    <div class="page-header">
+      <h2 class="page-title">BLEU'S RADIO</h2>
+      <p class="page-subtitle">Stream the latest mixes and episodes</p>
+    </div>
+
+    <div class="radio-body">
+
+      <!-- Embedded Media Section -->
+      <div class="embed-grid">
+        
+        <!-- Spotify Track -->
+        <div class="embed-card">
+          <div class="section-label">LATEST TRACK</div>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/34BydEja6Ghldzmx02u3Ti?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <!-- YouTube Video -->
+        <div class="embed-card">
+          <div class="section-label">Tech - House and Jersey Club in a Car</div>
+          <iframe width="100%" height="352" style="border-radius:12px; border:none;" src="https://www.youtube.com/embed/m_qLt6RZwt4?origin=http://localhost:8765" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+      </div>
+
+
+      <div class="streaming-links">
+        <div class="section-label">FIND US ON</div>
+        <div class="streaming-row">
+          <a href="https://open.spotify.com/artist/439QZXiikUFe9qO4Ry6T0v" target="_blank" class="stream-btn" id="stream-spotify">SPOTIFY</a>
+          <a href="https://music.apple.com/us/artist/bleu/1641561130" target="_blank" class="stream-btn" id="stream-apple">APPLE MUSIC</a>
+          <a href="https://www.youtube.com/channel/UCEt27Mt1fhS4bCaIHtexTfA" target="_blank" class="stream-btn" id="stream-youtube">YOUTUBE</a>
+          <a href="https://www.instagram.com/itsdjbleu/" target="_blank" class="stream-btn" id="stream-instagram">INSTAGRAM</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  ABOUT SECTION                      -->
+  <!-- ═══════════════════════════════════ -->
+  <section id="section-about" class="section">
+
+    <div class="page-header">
+      <h2 class="page-title">ABOUT BLEU</h2>
+      <p class="page-subtitle">The story behind the sound</p>
+    </div>
+
+    <div class="about-body">
+
+      <div class="about-grid">
+        <div class="about-portrait">
+          <div class="portrait-frame">
+            <div class="portrait-inner"></div>
+            <div class="portrait-accent-line"></div>
+            <div class="portrait-label-vert">BLEU / DJ &amp; PRODUCER</div>
+          </div>
+        </div>
+
+        <div class="about-text-col">
+          <h3 class="about-headline">GROOVE IS THE LANGUAGE</h3>
+          <p class="about-para">
+            BLEU is a groove-driven DJ and producer whose sound defies boundaries. Rooted in the pulsing rhythms of Tech-House, the raw energy of Jersey Club, the soulful warmth of Amapiano, and the spiritual depth of Afro House — every set BLEU plays is a journey built to move both body and soul.
+          </p>
+          <p class="about-para">
+            Born out of a relentless love for the dancefloor, BLEU crafts percussive, rolling sets that hold the crowd from first drop to last record. His productions carry the same weight: warm basslines, layered rhythms, and an undeniable groove that hits every time.
+          </p>
+          <p class="about-para">
+            Whether behind the decks at a warehouse rave or in the studio finishing a new mix for Bleu's Radio, BLEU's mission never changes — <em>move the dancefloor.</em>
+          </p>
+
+
+
+          <div class="about-contact">
+            <a href="mailto:book@djbleu.com" class="btn-primary" id="about-book-btn">BOOK BLEU</a>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/itsdjbleu/" target="_blank" class="social-icon" id="social-ig" aria-label="Instagram">IG</a>
+              <a href="https://www.youtube.com/channel/UCEt27Mt1fhS4bCaIHtexTfA" target="_blank" class="social-icon" id="social-yt" aria-label="YouTube">YT</a>
+              <a href="https://open.spotify.com/artist/439QZXiikUFe9qO4Ry6T0v" target="_blank" class="social-icon" id="social-sp" aria-label="Spotify">SP</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="genre-pills-section">
+        <div class="section-label">THE SOUND</div>
+        <div class="genre-pills">
+          <div class="genre-pill">TECH-HOUSE</div>
+          <div class="genre-pill">JERSEY CLUB</div>
+          <div class="genre-pill">AMAPIANO</div>
+          <div class="genre-pill">AFRO HOUSE</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">BLEU</div>
+      <div class="footer-links">
+        <a href="#" data-section="home" class="footer-link">HOME</a>
+        <a href="#" data-section="events" class="footer-link">EVENTS</a>
+        <a href="#" data-section="radio" class="footer-link">RADIO</a>
+        <a href="#" data-section="about" class="footer-link">ABOUT</a>
+      </div>
+      <div class="footer-copy">&copy; 2026 DJ BLEU. All rights reserved.</div>
+    </div>
+  <!-- ── BACKGROUND MUSIC ── -->
+  <iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2336093855&auto_play=true&enable_api=1" width="300" height="150" frameborder="0" allow="autoplay" style="position:fixed; top:-9999px; left:-9999px; opacity:0; pointer-events:none; z-index:-99;"></iframe>
+  
+  <div class="bg-music-wrapper">
+    <div class="liquid-glass-visualizer"></div>
+    <button id="bg-music-toggle" class="bg-music-btn" aria-label="Toggle background music">
+      <span class="icon-play">&#9654;</span>
+      <span class="icon-pause" style="display:none;">&#10074;&#10074;</span>
+    </button>
+  </div>
+
+  <script src="https://w.soundcloud.com/player/api.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
